@@ -23,6 +23,12 @@ $ git clone https://github.com/jumbo5566/SRFRS
 [root@allstar ~]# python srfrs.py version
 SRFRS: INFO: Firmware version: 110U-V223
 
+[root@alarmpi SRFRS]# python srfrs.py radio --frequency 438.500
+SRFRS: INFO: +DMOSETGROUP:0, RX frequency: 438.5000, TX frequency: 438.5000, squelch: 4, OK
+
+[root@alarmpi SRFRS]# python srfrs.py radio --frequency 438.500 --offset -5
+SRFRS: INFO: +DMOSETGROUP:0, RX frequency: 438.5000, TX frequency: 433.5000, squelch: 4, OK
+
 [root@allstar ~]# python srfrs.py radio --frequency 145.230 --offset -.6 --ctcss 100
 SRFRS: INFO: +DMOSETGROUP:0, RX frequency: 145.2300, TX frequency: 144.6300, ctcss: 100.0, squelch: 4, OK
 
