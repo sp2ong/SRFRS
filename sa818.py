@@ -99,7 +99,7 @@ class SA818:
     return line.rstrip()
 
   def version(self):
-    self.send("AT+VERSION")
+    self.send("AT+DMOVERQ")
     time.sleep(0.5)
     reply = self.readline()
     try:
@@ -112,8 +112,8 @@ class SA818:
 
   def set_radio(self, opts):
     tone = opts.ctcss if opts.ctcss else opts.dcs
-    if not tone:                # 0000 = No ctcss or dcs tone
-      tone = '0000'
+    if not tone:                # 00 = No ctcss or dcs tone
+      tone = '00'
 
     if opts.offset == 0.0:
       tx_freq = rx_freq = "{:.4f}".format(opts.frequency)
@@ -121,8 +121,8 @@ class SA818:
       rx_freq = "{:.4f}".format(opts.frequency)
       tx_freq = "{:.4f}".format(opts.frequency + opts.offset)
 
-    cmd = "{}={},{},{},{},{},{}".format(self.SETGRP, self.WIDE, tx_freq, rx_freq,
-                                        tone, opts.squelch, tone)
+    cmd = "{}={},{},{},{},{},{},{}".format(self.SETGRP, self.WIDE, tx_freq, rx_freq,
+                                        tone, opts.squelch, tone,1)
     self.send(cmd)
     time.sleep(1)
     response = self.readline()
