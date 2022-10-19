@@ -1,4 +1,4 @@
-# SR-FRS Radio Module Programming
+# SR-FRS Radio Module Programming not for SA818
 
 My friend (W6IPA) and I developed a versatile Raspberry-Pi hat that
 can be used for Allstar, Echolink, APRS, or any digital modes.
