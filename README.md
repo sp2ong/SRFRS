@@ -1,4 +1,4 @@
-# SR-FRS Radio Module Programming not for SA818
+# SR-FRS Radio Module Programming( pin to pin replace SA-818 Module)
 
 My friend (W6IPA) and I developed a versatile Raspberry-Pi hat that
 can be used for Allstar, Echolink, APRS, or any digital modes.
@@ -50,8 +50,7 @@ This program has for sections:
 
  - radio: Program the radio's frequency, tone and squelch level
  - volume: Set the volume level
- - filters: Turn on or off the [pre/de]-emphasis and as well as the high and low pass filter
- - version: display the firmware version of the SA818 module
+ - version: display the firmware version of the SR-FRS module
 
 ```
 usage: srfrs [-h] [--port PORT] [--debug]
