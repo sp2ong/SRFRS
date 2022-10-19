@@ -54,7 +54,7 @@ This program has for sections:
  - version: display the firmware version of the SA818 module
 
 ```
-usage: sa818 [-h] [--port PORT] [--debug]
+usage: srfrs [-h] [--port PORT] [--debug]
                 {radio,volume,filters,version} ...
 
 generate configuration for switch port
@@ -92,7 +92,7 @@ optional arguments:
 ### Volume
 
 ```
-usage: sa818 volume [-h] [--level LEVEL]
+usage: srfrs volume [-h] [--level LEVEL]
 
 optional arguments:
   -h, --help     show this help message and exit
