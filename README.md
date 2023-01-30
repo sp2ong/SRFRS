@@ -59,10 +59,9 @@ usage: srfrs [-h] [--port PORT] [--debug]
 generate configuration for switch port
 
 positional arguments:
-  {radio,volume,filters,version}
+  {radio,volume,version}
     radio               Program the radio (frequency/tome/squelch)
     volume              Set the volume level
-    filters             Set filters
     version             Show the firmware version of the SA818
 
 optional arguments:
