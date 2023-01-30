@@ -1,4 +1,5 @@
-# SR-FRS/SR110U Radio Module Programming( pin to pin replace SA-818 Module)
+# SR-FRS / SR110U Radio Module Programming 
+(pin to pin replace SA-818 Module)
 
 My friend (W6IPA) and I developed a versatile Raspberry-Pi hat that
 can be used for Allstar, Echolink, APRS, or any digital modes.
@@ -6,7 +7,7 @@ can be used for Allstar, Echolink, APRS, or any digital modes.
 We use the program in this GitHub repository to program the radio
 module SR-FRS or SR110U used for the Pi-Hat.
 
-**Before programming the SR-FRS module, make sure you consult the band
+**Before programming the SR-FRS SR110U module, make sure you consult the band
 plan for your country and transmit on a frequency you are allowed to
 use.**
 
