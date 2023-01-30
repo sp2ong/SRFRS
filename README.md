@@ -14,7 +14,7 @@ use.**
 ## Intallation
 
 ```
-$ git clone https://github.com/jumbo5566/SRFRS
+$ git clone https://github.com/sp2ong/SRFRS
 
 ```
 
